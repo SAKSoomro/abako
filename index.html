@@ -62,40 +62,88 @@
         <div class="d-flex mt-4">
           <div class="me-4">
             <ul class="list-group">
-              <li class="list-group-item">
-                <a class="text-dark" href="./common.html">Common</a>
+              <li class="list-group-item" id="common-click-list">
+                <a
+                  id="common-click"
+                  style="color: black"
+                  href="#common"
+                  onclick="commonClick(this,'#2d343c','white', 'Common','https://images.unsplash.com/photo-1596931926094-4a2439f80a78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60' )"
+                  >Common</a
+                >
               </li>
-              <li class="list-group-item">
-                <a class="text-dark" href="./danger.html">Danger</a>
+              <li class="list-group-item" id="danger-list">
+                <a
+                  id="danger-click"
+                  style="color: black"
+                  href="#danger"
+                  onclick="dangerClick(this,'#2d343c','white', 'Danger',  'https://images.unsplash.com/photo-1665922907499-9918475de9ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' )"
+                  >Danger</a
+                >
               </li>
-              <li class="list-group-item bg-dark">
-                <a class="text-light" href="./index.html">Fire</a>
+              <li
+                class="list-group-item"
+                id="fire-list"
+                style="background-color: #2d343c"
+              >
+                <a
+                  id="fire-click"
+                  href="#fire"
+                  style="color: white"
+                  onclick="fireClick(this,'#2d343c','white', 'Fire', 'https://images.unsplash.com/photo-1434139240289-56c519f77cb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
+                  >Fire</a
+                >
               </li>
-              <li class="list-group-item">
-                <a class="text-dark" href="./incident.html">Incident</a>
+              <li class="list-group-item" id="incident-list">
+                <a
+                  id="incident-click"
+                  style="color: black"
+                  href="#incident"
+                  onclick="incidentClick(this,'#2d343c','white', 'Incident', 'https://images.unsplash.com/photo-1471476982590-a2e02d8544dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"
+                  >Incident</a
+                >
               </li>
-              <li class="list-group-item">
-                <a class="text-dark" href="./personal-injury.html"
+              <li class="list-group-item" id="personal-list">
+                <a
+                  id="personal-click"
+                  style="color: black"
+                  href="#personal-injury"
+                  onclick="personalClick(this,'#2d343c','white', 'Personal Injury', 'https://images.unsplash.com/photo-1532891955744-b9a39d0f4b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60' )"
                   >Personal Injury</a
                 >
               </li>
-              <li class="list-group-item">
-                <a class="text-dark" href="./enviromental.html">Enviromental</a>
+              <li class="list-group-item" id="enviromental-list">
+                <a
+                  id="enviromental-click"
+                  style="color: black"
+                  href="#enviromental"
+                  onclick="enviromentalClick(this,'#2d343c','white', 'Enviromental', 'https://images.unsplash.com/photo-1601928653712-120cfdc00398?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60')"
+                  >Enviromental</a
+                >
               </li>
-              <li class="list-group-item">
-                <a class="text-dark" href="./translation-errors.html"
+              <li class="list-group-item" id="translation-list">
+                <a
+                  id="translation-click"
+                  style="color: black"
+                  href="#translation"
+                  onclick="translationClick(this,'#2d343c','white', 'Translation', 'https://images.unsplash.com/photo-1505883776-dae17d87b915?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60')"
                   >Translation errors</a
                 >
               </li>
-              <li class="list-group-item">
-                <a class="text-dark" href="./breakings.html">Breakings</a>
+              <li class="list-group-item" id="breakings-list">
+                <a
+                  id="breakings-click"
+                  style="color: black"
+                  href="#breakings"
+                  onclick="breakingsClick(this,'#2d343c','white', 'Breakings', 'https://images.unsplash.com/photo-1434139240289-56c519f77cb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
+                  >Breakings</a
+                >
               </li>
             </ul>
           </div>
           <div>
             <div>
               <!-- ARTICLE TITLE -->
-              <p class="h1">Fire</p>
+              <p id="article-title" class="h1" onclick="clickMe()">Fire</p>
             </div>
             <div
               class="px-2 pt-2 d-flex justify-content-between border"
@@ -117,10 +165,15 @@
               <div class="d-flex">
                 <div class="mb-3 me-3">
                   <!-- ARTICLE IMAGE -->
-                  <img src="./img/fire.png" alt="img" style="width: 300px" />
+                  <img
+                    id="article-img"
+                    src="https://images.unsplash.com/photo-1434139240289-56c519f77cb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="img"
+                    style="width: 300px"
+                  />
                 </div>
                 <div>
-                  <p>
+                  <p id="paragraph-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Delectus, exercitationem! Tempora voluptatem laborum
                     voluptas ipsa non fuga, maxime veniam! Assumenda sequi
@@ -135,7 +188,7 @@
                 </div>
               </div>
               <div>
-                <p>
+                <p id="paragraph-2">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Nihil quidem quod dolore perferendis! Maxime, mollitia vel.
                   Nisi esse necessitatibus tenetur tempore! Totam sunt unde
@@ -154,7 +207,7 @@
               <div class="my-2 mx-auto" style="width: fit-content">
                 <div>
                   <hr class="w-25 mx-auto" />
-                  <i class="h5"
+                  <i class="h5" id="qoute"
                     >Veljesten nimet vanhimmasta nuorimpaan ovat:<br />Juhani,
                     Tauomas, Aspo, Simeoni, Timo, Lauri ja Ero.</i
                   >
@@ -162,7 +215,7 @@
                 </div>
               </div>
               <div>
-                <p>
+                <p id="paragraph-3">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Beatae voluptatem placeat asperiores mollitia perferendis
                   accusamus iure adipisci, reiciendis recusandae velit sint
@@ -188,7 +241,7 @@
                 </p>
               </div>
               <div>
-                <p>
+                <p id="paragraph-4">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Ullam ipsum, maxime dolores sit quos voluptatem totam illo
                   animi culpa voluptate optio eveniet, quisquam velit
@@ -307,5 +360,289 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      function commonClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("common-click-list").style.backgroundColor =
+          bgColor;
+        element.style.color = textColor;
+
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function dangerClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("danger-list").style.backgroundColor = bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function fireClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("fire-list").style.backgroundColor = bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function incidentClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("incident-list").style.backgroundColor =
+          bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function personalClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("personal-list").style.backgroundColor =
+          bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function enviromentalClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("enviromental-list").style.backgroundColor =
+          bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function translationClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("translation-list").style.backgroundColor =
+          bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        document.getElementById("breakings-list").style.backgroundColor =
+          "white";
+        document.getElementById("breakings-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+      function breakingsClick(element, bgColor, textColor, title, imgURL) {
+        document.getElementById("article-title").innerHTML = title;
+        document.getElementById("article-img").src = imgURL;
+        document.getElementById("breakings-list").style.backgroundColor =
+          bgColor;
+        element.style.color = textColor;
+        document.getElementById("common-click-list").style.backgroundColor =
+          "white";
+        document.getElementById("common-click").style.color = "black";
+        document.getElementById("danger-list").style.backgroundColor = "white";
+        document.getElementById("danger-click").style.color = "black";
+        document.getElementById("fire-list").style.backgroundColor = "white";
+        document.getElementById("fire-click").style.color = "black";
+        document.getElementById("personal-list").style.backgroundColor =
+          "white";
+        document.getElementById("personal-click").style.color = "black";
+        document.getElementById("enviromental-list").style.backgroundColor =
+          "white";
+        document.getElementById("enviromental-click").style.color = "black";
+        document.getElementById("translation-list").style.backgroundColor =
+          "white";
+        document.getElementById("translation-click").style.color = "black";
+        document.getElementById("incident-list").style.backgroundColor =
+          "white";
+        document.getElementById("incident-click").style.color = "black";
+        // TO CHANGE ARTICLE TEXT
+        document.getElementById("paragraph-1").innerText =
+          "This School management system software is used to manage information regarding students,office staff, Librarian,Account officer, administrators and other school personnel use this platform to communicate and perform tasks.School management system software assists the school in keeping all information related to the different departments of school in one place. The software system provides users with a log in credentials for accessing the files. The system is designed to automatically organize information as its input into the system.";
+        document.getElementById("paragraph-2").innerText =
+          "thisthis software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like software is Designed keeping in view the basic requirement of particular school.This software Provides a secure database structure with Login authenticated system that organizes stores and retrieves real time information.This software cover several modules Like";
+        document.getElementById("paragraph-3").innerText =
+          "class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work. class management,Account management,Event Management,Transportation Management,Library Management,Hostel Management.This School Management System has a large database system with Database Backup and Recovery that Can be Used for Schools Daily Work.";
+        document.getElementById("paragraph-4").innerText =
+          "Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. Its have multiple views for three different-different users :Manual Users Control  All the users will be control by admin …admin can give all rights to other users manually. ";
+      }
+    </script>
   </body>
 </html>
